@@ -49,11 +49,7 @@ app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'static', 'uploads')
 
 # Database connection
 db = connector.connect(
-    user="bismillahcobacoba", 
-    password="{BismillahC0baco}", 
-    host="bismillahcobacoba.mysql.database.azure.com", 
-    port=3306, 
-    database="ecommerce"
+    cnx = mysql.connector.connect(user="bisminna", password="Aminku1ya", host="bismillahya.mysql.database.azure.com", port=3306, database="ecommerce", ssl_ca="{ca-cert filename}", ssl_disabled=False)
 )
 db_config = {
     'host': 'localhost',
